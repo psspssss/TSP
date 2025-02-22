@@ -5,15 +5,9 @@
 #include "tsplib.h"
 #include "tspdata.h"
 
-
-typedef struct {
-    int *data; 
-    unsigned int n;
-} tspdata_t;
-
 /* internal public functions =========================================== */
 
-int dist_short(tspdata_t *tsp, int tab[], int i);
-void greedy(tspdata_t *tsp);
+int find_closest_city(tspdata_t *tsp, int visited[], int current_city);
+void greedy_algorithm(tspdata_t *tsp);
 
 #endif

@@ -21,9 +21,8 @@ int main()
         }
     }
     */
-   
     tspdata_t *prob = tspdata_init(data);
-    greedy(prob);
-    //tspdata_print(prob);
+    greedy_algorithm(prob);  
+    free(data); 
     return 0;
 }

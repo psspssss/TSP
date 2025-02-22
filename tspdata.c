@@ -32,13 +32,3 @@ void tspdata_free(tspdata_t *t) {
 int tspdata_get(tspdata_t *t, unsigned i, unsigned j) {
     return t->data[i * t->n + j];
 }
-
-/* Fonction pour afficher le tableau */
-void tspdata_print(tspdata_t *t){
-    for(int i=0; i<t->n; i++){
-        for(int j=0; j<t->n; j++){
-            printf("%d -> %d: %d\n", i+1, j+1, tspdata_get(t, i, j));
-        }
-    }
-    tspdata_free(t);
-}
