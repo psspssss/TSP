@@ -3,17 +3,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <limits.h>
 
 #include "tsplib.h"
 #include "tspdata.h"
 #include "greedy.h"
 
-
-
+// Trouve la ville non visitée la plus proche depuis current_city
 int find_closest_city(tspdata_t *tsp, tsp_a *greedy, int current_city) {
     int closest_city = -1;
     int min_distance = __INT_MAX__;
-
+    // Vérifie que la ville n’a pas été visitée et que la distance est minimale
     for (int city = 0; city < tsp->n; city++) {
         if (greedy->visited[city] == 0 && tsp->data[current_city * tsp->n + city] < min_distance) {
             min_distance = tsp->data[current_city * tsp->n + city];
@@ -23,6 +23,7 @@ int find_closest_city(tspdata_t *tsp, tsp_a *greedy, int current_city) {
     return closest_city;
 }
 
+// Algorithme glouton pour le TSP
 tsp_a* greedy_algorithm(tspdata_t *tsp) {
     srand(time(NULL));
 
@@ -54,6 +55,7 @@ tsp_a* greedy_algorithm(tspdata_t *tsp) {
     return greedy;
 }
 
+// Libération de la mémoire allouée
 void tsp_a_free(tsp_a *greedy) {
     free(greedy->tour);
     free(greedy->visited);    

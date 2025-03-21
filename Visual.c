@@ -9,7 +9,7 @@
 #include "tspdata.h"
 
 
-
+//Fenêtre Visuel des points TSP
 void visual_test(tspdata_t *tsp ,tsp_a *greedy){
     srand(time(NULL));
 

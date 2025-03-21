@@ -7,12 +7,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "tsplib.h"
 #include "tspdata.h"
 #include "random.h"
 
-
+//Génère une solution aléatoire pour le TSP
 tsp_a* random_algorithm(tspdata_t *tsp){
     srand(time(NULL));
     

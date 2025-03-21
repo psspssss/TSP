@@ -21,6 +21,7 @@ int better_tour(tspdata_t *tsp, tsp_a *chemin, int i_rd, int j_rd){
     return 0;
 }
 
+// Permute deux villes dans le chemin
 void permut(tsp_a *chemin, int i, int j){
    int temp = chemin->tour[i];
     chemin->tour[i] = chemin->tour[j];

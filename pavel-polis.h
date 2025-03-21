@@ -7,6 +7,7 @@
 
 /* internal public functions =========================================== */
 
+tsp_a* pavel_polis_algorithm(tspdata_t *tsp, int T);
 
 #endif
 
