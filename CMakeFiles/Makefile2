@@ -85,12 +85,12 @@ clean: CMakeFiles/test_tsp.dir/clean
 CMakeFiles/test_tsp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target test_tsp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target test_tsp"
 .PHONY : CMakeFiles/test_tsp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test_tsp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/tsptest/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/tsptest/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_tsp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/tsptest/build/CMakeFiles 0
 .PHONY : CMakeFiles/test_tsp.dir/rule
@@ -102,7 +102,7 @@ test_tsp: CMakeFiles/test_tsp.dir/rule
 # codegen rule for target.
 CMakeFiles/test_tsp.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target test_tsp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Finished codegen for target test_tsp"
 .PHONY : CMakeFiles/test_tsp.dir/codegen
 
 # clean rule for target.

@@ -1,32 +1,38 @@
 [
 {
   "directory": "/Users/dev/Documents/C/tsptest/build",
-  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/main.c.o -c /Users/dev/Documents/C/tsptest/main.c",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/sdl2/2.32.0/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/main.c.o -c /Users/dev/Documents/C/tsptest/main.c",
   "file": "/Users/dev/Documents/C/tsptest/main.c",
   "output": "CMakeFiles/test_tsp.dir/main.c.o"
 },
 {
   "directory": "/Users/dev/Documents/C/tsptest/build",
-  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/misc.c.o -c /Users/dev/Documents/C/tsptest/misc.c",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/sdl2/2.32.0/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/misc.c.o -c /Users/dev/Documents/C/tsptest/misc.c",
   "file": "/Users/dev/Documents/C/tsptest/misc.c",
   "output": "CMakeFiles/test_tsp.dir/misc.c.o"
 },
 {
   "directory": "/Users/dev/Documents/C/tsptest/build",
-  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/tsplib.c.o -c /Users/dev/Documents/C/tsptest/tsplib.c",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/sdl2/2.32.0/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/tsplib.c.o -c /Users/dev/Documents/C/tsptest/tsplib.c",
   "file": "/Users/dev/Documents/C/tsptest/tsplib.c",
   "output": "CMakeFiles/test_tsp.dir/tsplib.c.o"
 },
 {
   "directory": "/Users/dev/Documents/C/tsptest/build",
-  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/tspdata.c.o -c /Users/dev/Documents/C/tsptest/tspdata.c",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/sdl2/2.32.0/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/tspdata.c.o -c /Users/dev/Documents/C/tsptest/tspdata.c",
   "file": "/Users/dev/Documents/C/tsptest/tspdata.c",
   "output": "CMakeFiles/test_tsp.dir/tspdata.c.o"
 },
 {
   "directory": "/Users/dev/Documents/C/tsptest/build",
-  "command": "/usr/bin/clang   -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/greedy.c.o -c /Users/dev/Documents/C/tsptest/greedy.c",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/sdl2/2.32.0/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/greedy.c.o -c /Users/dev/Documents/C/tsptest/greedy.c",
   "file": "/Users/dev/Documents/C/tsptest/greedy.c",
   "output": "CMakeFiles/test_tsp.dir/greedy.c.o"
+},
+{
+  "directory": "/Users/dev/Documents/C/tsptest/build",
+  "command": "/usr/bin/clang  -I/opt/homebrew/Cellar/sdl2/2.32.0/include -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/test_tsp.dir/Visual.c.o -c /Users/dev/Documents/C/tsptest/Visual.c",
+  "file": "/Users/dev/Documents/C/tsptest/Visual.c",
+  "output": "CMakeFiles/test_tsp.dir/Visual.c.o"
 }
 ]

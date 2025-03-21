@@ -129,6 +129,30 @@ test_tsp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/build
 .PHONY : test_tsp/fast
 
+Visual.o: Visual.c.o
+.PHONY : Visual.o
+
+# target to build an object file
+Visual.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/Visual.c.o
+.PHONY : Visual.c.o
+
+Visual.i: Visual.c.i
+.PHONY : Visual.i
+
+# target to preprocess a source file
+Visual.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/Visual.c.i
+.PHONY : Visual.c.i
+
+Visual.s: Visual.c.s
+.PHONY : Visual.s
+
+# target to generate assembly for a file
+Visual.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/Visual.c.s
+.PHONY : Visual.c.s
+
 greedy.o: greedy.c.o
 .PHONY : greedy.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_tsp"
+	@echo "... Visual.o"
+	@echo "... Visual.i"
+	@echo "... Visual.s"
 	@echo "... greedy.o"
 	@echo "... greedy.i"
 	@echo "... greedy.s"
