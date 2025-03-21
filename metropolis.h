@@ -1,22 +1,15 @@
-/* greedy.h */
+/* metropolis.h */
 
 #ifndef GREEDY_H
 #define GREEDY_H
-#include "tsplib.h"
-#include "tspdata.h"
-
-
-/* structures ========================================================== */
-
-typedef struct {
-    int *data; 
-    unsigned int size;
-} tspdata_m;
-
 
 /* internal public functions =========================================== */
 
-void permut(tspdata_m *chemin, int i, int j);
-void metropolis(tspdata_m *chemin);
+void permut(tsp_a *chemin, int i, int j);
+int better_tour(tspdata_t *tsp, tsp_a *chemin, int i, int j);
+tsp_a* metropolis_algorithm(tspdata_t *tsp, int T);
+
 
 #endif
+
+/* eof */

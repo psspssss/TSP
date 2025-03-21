@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_tsp.dir/Visual.c.o"
+  "CMakeFiles/test_tsp.dir/Visual.c.o.d"
   "CMakeFiles/test_tsp.dir/greedy.c.o"
   "CMakeFiles/test_tsp.dir/greedy.c.o.d"
   "CMakeFiles/test_tsp.dir/main.c.o"

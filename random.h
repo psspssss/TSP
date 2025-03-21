@@ -2,12 +2,13 @@
 
 #ifndef RANDOM_H
 #define RANDOM_H
-#include "tsplib.h"
-#include "tspdata.h"
+
+/* structures ========================================================== */
 
 /* internal public functions =========================================== */
 
-int dist_short(tspdata_t *tsp, int tab[], int i);
-void random(tspdata_t *tsp);
+tsp_a* random_algorithm(tspdata_t *tsp);
 
 #endif
+
+/* eof */

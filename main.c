@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <SDL2/SDL.h>
 #include "tsplib.h"
 #include "tspdata.h"
 #include "greedy.h"
+#include "Visual.h"
+
 
 int main()
 {
@@ -12,17 +15,12 @@ int main()
         fprintf(stderr, "Aborting...\n");
         return -1;
     }
-    /*
-    n=data->dimension;
-    // The indices are 1-based!
-    for(i=1; i<=n; i++){
-        for(j=1; j<=n; j++){
-            printf("%d -> %d: %d\n", i, j, tsp_distance(data, i, j));
-        }
-    }
-    */
-    tspdata_t *prob = tspdata_init(data);
-    greedy_algorithm(prob);  
-    free(data); 
+
+    tspdata_t *tsp = tspdata_init(data);
+    tsp_a *greedy = greedy_algorithm(tsp);  
+    visual_test(tsp, greedy);
+
+    //tsp_free_data(tsp);
+    //tsp_g_free(greedy);
     return 0;
 }

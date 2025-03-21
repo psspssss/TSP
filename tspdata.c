@@ -1,5 +1,8 @@
+/* tspdata.h */
+
 #include <stdio.h>
 #include <stdlib.h>
+
 #include "tsplib.h"
 #include "tspdata.h"
 
@@ -32,3 +35,5 @@ void tspdata_free(tspdata_t *t) {
 int tspdata_get(tspdata_t *t, unsigned i, unsigned j) {
     return t->data[i * t->n + j];
 }
+
+/* eof */

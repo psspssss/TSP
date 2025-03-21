@@ -2,12 +2,15 @@
 
 #ifndef GREEDY_H
 #define GREEDY_H
-#include "tsplib.h"
-#include "tspdata.h"
+
+/* structures ========================================================== */
 
 /* internal public functions =========================================== */
 
-int find_closest_city(tspdata_t *tsp, int visited[], int current_city);
-void greedy_algorithm(tspdata_t *tsp);
+int find_closest_city(tspdata_t *tsp, tsp_a *greedy, int current_city);
+tsp_a* greedy_algorithm(tspdata_t *tsp);
+void tsp_a_free(tsp_a *greedy);
 
 #endif
+
+/* eof */

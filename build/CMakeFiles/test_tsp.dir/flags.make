@@ -4,7 +4,7 @@
 # compile C with /usr/bin/clang
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/opt/homebrew/Cellar/sdl2/2.32.0/include
 
 C_FLAGSarm64 = -g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
 

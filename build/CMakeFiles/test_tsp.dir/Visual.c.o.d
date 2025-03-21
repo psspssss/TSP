@@ -1,4 +1,5 @@
-CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/tsptest/main.c \
+CMakeFiles/test_tsp.dir/Visual.c.o: \
+  /Users/dev/Documents/C/tsptest/Visual.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/cdefs.h \
@@ -82,6 +83,12 @@ CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/tsptest/main.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_mode_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_clock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_time_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_timespec.h \
+  /Users/dev/Documents/C/tsptest/Visual.h \
   /opt/homebrew/Cellar/sdl2/2.32.0/include/SDL2/SDL.h \
   /opt/homebrew/Cellar/sdl2/2.32.0/include/SDL2/SDL_main.h \
   /opt/homebrew/Cellar/sdl2/2.32.0/include/SDL2/SDL_stdinc.h \
@@ -105,8 +112,6 @@ CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/tsptest/main.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_ino64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_key_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_nlink_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_clock_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_useconds_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_suseconds_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_rsize_t.h \
@@ -140,9 +145,6 @@ CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/tsptest/main.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_mbstate_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_timespec.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/__wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/___wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_wint_t.h \
@@ -201,7 +203,6 @@ CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/tsptest/main.c \
   /opt/homebrew/Cellar/sdl2/2.32.0/include/SDL2/SDL_version.h \
   /opt/homebrew/Cellar/sdl2/2.32.0/include/SDL2/SDL_locale.h \
   /opt/homebrew/Cellar/sdl2/2.32.0/include/SDL2/SDL_misc.h \
-  /Users/dev/Documents/C/tsptest/tsplib.h \
-  /Users/dev/Documents/C/tsptest/tspdata.h \
   /Users/dev/Documents/C/tsptest/greedy.h \
-  /Users/dev/Documents/C/tsptest/Visual.h
+  /Users/dev/Documents/C/tsptest/tsplib.h \
+  /Users/dev/Documents/C/tsptest/tspdata.h

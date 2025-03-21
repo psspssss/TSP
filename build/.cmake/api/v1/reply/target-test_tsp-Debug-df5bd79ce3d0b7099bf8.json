@@ -11,7 +11,8 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -25,13 +26,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 18,
+				"line" : 19,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 19,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 22,
 				"parent" : 0
 			}
 		]
@@ -43,6 +50,13 @@
 			[
 				{
 					"fragment" : "-g -std=gnu99 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/opt/homebrew/Cellar/sdl2/2.32.0/include"
 				}
 			],
 			"language" : "C",
@@ -60,7 +74,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -80,6 +95,11 @@
 			{
 				"backtrace" : 2,
 				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "/opt/homebrew/Cellar/sdl2/2.32.0/lib/libSDL2.dylib",
 				"role" : "libraries"
 			}
 		],
@@ -102,7 +122,8 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5
 			]
 		}
 	],
@@ -136,6 +157,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "greedy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Visual.c",
 			"sourceGroupIndex" : 0
 		}
 	],
