@@ -61,4 +61,12 @@ tsp_a* greedy_algorithm(tspdata_t *tsp) {
     return greedy;
 }
 
+// Libération de la mémoire allouée
+void tsp_a_free(tsp_a *greedy) {
+    free(greedy->tour);
+    free(greedy->visited);    
+    free(greedy);    
+}
+
+
 /* eof */
