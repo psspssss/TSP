@@ -1,13 +1,30 @@
-# TSP
+# tsp
 
-Ce projet implémente différentes approches pour résoudre le problème du voyageur de commerce (TSP - Travelling Salesman Problem). L'objectif est de trouver un chemin passant par un ensemble de points (villes), en revenant au point de départ, tout en minimisant la distance totale parcourue.
+Ce projet implémente et compare plusieurs algorithmes pour le problème du voyageur de commerce (TSP) en C, **sans interface graphique**.
 
-Algorithmes implémentés:
+## Algorithmes disponibles
 
-Random : génère un seul chemin en prenant un ordre aléatoire des villes. Il ne garantit pas un bon résultat, mais sert de point de comparaison simple.
-Greedy : part d'une ville aléatoire et sélectionne à chaque étape la ville la plus proche non encore visitée.
-Metropolis : une version simplifiée de l'algorithme de recuit simulé. Il accepte parfois des solutions moins bonnes pour éviter les minima locaux.
+- **Glouton (Greedy)** : construit un chemin en choisissant à chaque étape la ville non visitée la plus proche.
+- **Random** : génère un chemin aléatoire valide.
+- **Random Best of N** : génère N chemins aléatoires et garde le meilleur.
+- **Metropolis** : algorithme stochastique inspiré du recuit simulé, accepte parfois des solutions moins bonnes pour éviter les minima locaux.
 
-Visualisation:
+## Compilation
 
-Les points (villes) sont affichés dans une fenêtre.
+Le projet utilise CMake. Pour compiler.
+
+## Structure
+
+- `main.c` : point d’entrée, lance les benchmarks
+- `greedy.c` : algorithme glouton
+- `random.c` : génération de solutions aléatoires
+- `random_algo.c` : random best of N
+- `metropolis.c` : algorithme de Metropolis
+- `tspdata.c`, `tsplib.c` : gestion des données TSP
+
+## Remarques
+
+- Les résultats sont affichés dans le terminal.
+- Le projet est conçu pour être simple à compiler et portable.
+
+---
