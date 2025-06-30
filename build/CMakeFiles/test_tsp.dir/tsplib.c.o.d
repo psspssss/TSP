@@ -1,5 +1,5 @@
 CMakeFiles/test_tsp.dir/tsplib.c.o: \
-  /Users/dev/Documents/C/tsptest/tsplib.c \
+  /Users/dev/Documents/C/test_tsp/tsplib.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/cdefs.h \
@@ -99,5 +99,5 @@ CMakeFiles/test_tsp.dir/tsplib.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/secure/_string.h \
-  /Users/dev/Documents/C/tsptest/misc.h \
-  /Users/dev/Documents/C/tsptest/tsplib.h
+  /Users/dev/Documents/C/test_tsp/misc.h \
+  /Users/dev/Documents/C/test_tsp/tsplib.h

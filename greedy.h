@@ -3,13 +3,20 @@
 #ifndef GREEDY_H
 #define GREEDY_H
 
+#include "tspdata.h"
+
 /* structures ========================================================== */
 
-/* internal public functions =========================================== */
+/* Fonctions internes publiques ======================================== */
 
-int find_closest_city(tspdata_t *tsp, tsp_a *greedy, int current_city);
-tsp_a* greedy_algorithm(tspdata_t *tsp);
-void tsp_a_free(tsp_a *greedy);
+// Trouve la ville la plus proche non visitée
+int trouver_ville_plus_proche(donnees_probleme_tsp_t *donnees, solution_tsp_t *solution, int ville_courante);
+
+// Algorithme glouton pour le TSP
+solution_tsp_t* algorithme_glouton(donnees_probleme_tsp_t *donnees);
+
+// Libère la mémoire d'une solution TSP
+void solution_tsp_libere(solution_tsp_t *solution);
 
 #endif
 

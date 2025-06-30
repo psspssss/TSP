@@ -1,39 +1,54 @@
-/* tspdata.h */
+/* tspdata.c */
 
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "tsplib.h"
+#include "misc.h"
 #include "tspdata.h"
 
+/*
+ * Initialise et remplit la structure donnees_probleme_tsp_t à partir d'une instance TSP.
+ * Alloue la matrice des distances et la remplit à partir des données du problème.
+ */
+donnees_probleme_tsp_t* donnees_tsp_init(TSP *t) {
+    // Allocation de la structure du problème
+    donnees_probleme_tsp_t *donnees = (donnees_probleme_tsp_t*)malloc(sizeof(donnees_probleme_tsp_t));
+    if (!donnees) return NULL; // Erreur d'allocation
 
-/* Fonction pour initialiser et remplir la structure tspdata_t */
-tspdata_t* tspdata_init(TSP *t) {
-    tspdata_t *problem = (tspdata_t*)malloc(sizeof(tspdata_t)); //initialise problem
-    if (!problem) return NULL; //erreur
+    donnees->nb_villes = t->dimension;
 
-    problem->n = t->dimension;
+    // Allocation de la matrice des distances (tableau 1D de taille n*n)
+    donnees->matrice_distances = (int*)malloc(donnees->nb_villes * donnees->nb_villes * sizeof(int));
+    if (!donnees->matrice_distances) {
+        free(donnees);
+        return NULL; // Erreur d'allocation
+    }
 
-    problem->data = (int*)malloc(problem->n * problem->n * sizeof(int)); //initialise problem->data
-    if (!problem->data) return NULL; // erreur
-
-    for(int i=0; i<problem->n; i++){    //ecrit data
-        for(int j=0; j<problem->n; j++){
-           problem->data[i * problem->n + j] = tsp_distance(t, i+1, j+1);
+    // Remplissage de la matrice des distances à partir des coordonnées du problème
+    for (unsigned int i = 0; i < donnees->nb_villes; i++) {
+        for (unsigned int j = 0; j < donnees->nb_villes; j++) {
+            donnees->matrice_distances[i * donnees->nb_villes + j] = tsp_distance(t, i + 1, j + 1);
         }
     }
-    return problem;
+    return donnees;
 }
 
-/* Fonction pour libérer la mémoire de la structure tspdata_t */
-void tspdata_free(tspdata_t *t) {
-    free(t->data);  
-    free(t);        
+/*
+ * Libère la mémoire associée à la structure donnees_probleme_tsp_t.
+ */
+void donnees_tsp_libere(donnees_probleme_tsp_t *donnees) {
+    if (donnees) {
+        free(donnees->matrice_distances);
+        free(donnees);
+    }
 }
 
-/* Fonction pour récupérer une distance dans le tableau */
-int tspdata_get(tspdata_t *t, unsigned i, unsigned j) {
-    return t->data[i * t->n + j];
+/*
+ * Récupère la distance entre deux villes (i, j) à partir de la matrice des distances.
+ */
+int donnees_tsp_get_distance(donnees_probleme_tsp_t *donnees, unsigned i, unsigned j) {
+    return donnees->matrice_distances[i * donnees->nb_villes + j];
 }
 
 /* eof */

@@ -1,5 +1,5 @@
 CMakeFiles/test_tsp.dir/tspdata.c.o: \
-  /Users/dev/Documents/C/tsptest/tspdata.c \
+  /Users/dev/Documents/C/test_tsp/tspdata.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/cdefs.h \
@@ -83,5 +83,6 @@ CMakeFiles/test_tsp.dir/tspdata.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_abort.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_mode_t.h \
-  /Users/dev/Documents/C/tsptest/tsplib.h \
-  /Users/dev/Documents/C/tsptest/tspdata.h
+  /Users/dev/Documents/C/test_tsp/tsplib.h \
+  /Users/dev/Documents/C/test_tsp/misc.h \
+  /Users/dev/Documents/C/test_tsp/tspdata.h

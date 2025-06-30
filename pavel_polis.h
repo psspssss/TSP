@@ -3,11 +3,13 @@
 #ifndef PAVEL_POLIS_H
 #define PAVEL_POLIS_H
 
+#include "tspdata.h"
+
 /* structures ========================================================== */
 
 /* internal public functions =========================================== */
 
-tsp_a* pavel_polis_algorithm(tspdata_t *tsp, int T);
+solution_tsp_t* pavel_polis_algorithme(donnees_probleme_tsp_t *donnees, int T); 
 
 #endif
 

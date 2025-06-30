@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dev/Documents/C/tsptest
+CMAKE_SOURCE_DIR = /Users/dev/Documents/C/test_tsp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dev/Documents/C/tsptest/build
+CMAKE_BINARY_DIR = /Users/dev/Documents/C/test_tsp/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test_tsp.dir/depend.make
@@ -73,88 +73,116 @@ CMakeFiles/test_tsp.dir/codegen:
 .PHONY : CMakeFiles/test_tsp.dir/codegen
 
 CMakeFiles/test_tsp.dir/main.c.o: CMakeFiles/test_tsp.dir/flags.make
-CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/tsptest/main.c
+CMakeFiles/test_tsp.dir/main.c.o: /Users/dev/Documents/C/test_tsp/main.c
 CMakeFiles/test_tsp.dir/main.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_tsp.dir/main.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/main.c.o -MF CMakeFiles/test_tsp.dir/main.c.o.d -o CMakeFiles/test_tsp.dir/main.c.o -c /Users/dev/Documents/C/tsptest/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test_tsp.dir/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/main.c.o -MF CMakeFiles/test_tsp.dir/main.c.o.d -o CMakeFiles/test_tsp.dir/main.c.o -c /Users/dev/Documents/C/test_tsp/main.c
 
 CMakeFiles/test_tsp.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/main.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/tsptest/main.c > CMakeFiles/test_tsp.dir/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/main.c > CMakeFiles/test_tsp.dir/main.c.i
 
 CMakeFiles/test_tsp.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/main.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/tsptest/main.c -o CMakeFiles/test_tsp.dir/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/main.c -o CMakeFiles/test_tsp.dir/main.c.s
 
 CMakeFiles/test_tsp.dir/misc.c.o: CMakeFiles/test_tsp.dir/flags.make
-CMakeFiles/test_tsp.dir/misc.c.o: /Users/dev/Documents/C/tsptest/misc.c
+CMakeFiles/test_tsp.dir/misc.c.o: /Users/dev/Documents/C/test_tsp/misc.c
 CMakeFiles/test_tsp.dir/misc.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_tsp.dir/misc.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/misc.c.o -MF CMakeFiles/test_tsp.dir/misc.c.o.d -o CMakeFiles/test_tsp.dir/misc.c.o -c /Users/dev/Documents/C/tsptest/misc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/test_tsp.dir/misc.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/misc.c.o -MF CMakeFiles/test_tsp.dir/misc.c.o.d -o CMakeFiles/test_tsp.dir/misc.c.o -c /Users/dev/Documents/C/test_tsp/misc.c
 
 CMakeFiles/test_tsp.dir/misc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/misc.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/tsptest/misc.c > CMakeFiles/test_tsp.dir/misc.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/misc.c > CMakeFiles/test_tsp.dir/misc.c.i
 
 CMakeFiles/test_tsp.dir/misc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/misc.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/tsptest/misc.c -o CMakeFiles/test_tsp.dir/misc.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/misc.c -o CMakeFiles/test_tsp.dir/misc.c.s
 
 CMakeFiles/test_tsp.dir/tsplib.c.o: CMakeFiles/test_tsp.dir/flags.make
-CMakeFiles/test_tsp.dir/tsplib.c.o: /Users/dev/Documents/C/tsptest/tsplib.c
+CMakeFiles/test_tsp.dir/tsplib.c.o: /Users/dev/Documents/C/test_tsp/tsplib.c
 CMakeFiles/test_tsp.dir/tsplib.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_tsp.dir/tsplib.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/tsplib.c.o -MF CMakeFiles/test_tsp.dir/tsplib.c.o.d -o CMakeFiles/test_tsp.dir/tsplib.c.o -c /Users/dev/Documents/C/tsptest/tsplib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/test_tsp.dir/tsplib.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/tsplib.c.o -MF CMakeFiles/test_tsp.dir/tsplib.c.o.d -o CMakeFiles/test_tsp.dir/tsplib.c.o -c /Users/dev/Documents/C/test_tsp/tsplib.c
 
 CMakeFiles/test_tsp.dir/tsplib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/tsplib.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/tsptest/tsplib.c > CMakeFiles/test_tsp.dir/tsplib.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/tsplib.c > CMakeFiles/test_tsp.dir/tsplib.c.i
 
 CMakeFiles/test_tsp.dir/tsplib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/tsplib.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/tsptest/tsplib.c -o CMakeFiles/test_tsp.dir/tsplib.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/tsplib.c -o CMakeFiles/test_tsp.dir/tsplib.c.s
 
 CMakeFiles/test_tsp.dir/tspdata.c.o: CMakeFiles/test_tsp.dir/flags.make
-CMakeFiles/test_tsp.dir/tspdata.c.o: /Users/dev/Documents/C/tsptest/tspdata.c
+CMakeFiles/test_tsp.dir/tspdata.c.o: /Users/dev/Documents/C/test_tsp/tspdata.c
 CMakeFiles/test_tsp.dir/tspdata.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_tsp.dir/tspdata.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/tspdata.c.o -MF CMakeFiles/test_tsp.dir/tspdata.c.o.d -o CMakeFiles/test_tsp.dir/tspdata.c.o -c /Users/dev/Documents/C/tsptest/tspdata.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/test_tsp.dir/tspdata.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/tspdata.c.o -MF CMakeFiles/test_tsp.dir/tspdata.c.o.d -o CMakeFiles/test_tsp.dir/tspdata.c.o -c /Users/dev/Documents/C/test_tsp/tspdata.c
 
 CMakeFiles/test_tsp.dir/tspdata.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/tspdata.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/tsptest/tspdata.c > CMakeFiles/test_tsp.dir/tspdata.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/tspdata.c > CMakeFiles/test_tsp.dir/tspdata.c.i
 
 CMakeFiles/test_tsp.dir/tspdata.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/tspdata.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/tsptest/tspdata.c -o CMakeFiles/test_tsp.dir/tspdata.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/tspdata.c -o CMakeFiles/test_tsp.dir/tspdata.c.s
 
 CMakeFiles/test_tsp.dir/greedy.c.o: CMakeFiles/test_tsp.dir/flags.make
-CMakeFiles/test_tsp.dir/greedy.c.o: /Users/dev/Documents/C/tsptest/greedy.c
+CMakeFiles/test_tsp.dir/greedy.c.o: /Users/dev/Documents/C/test_tsp/greedy.c
 CMakeFiles/test_tsp.dir/greedy.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/test_tsp.dir/greedy.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/greedy.c.o -MF CMakeFiles/test_tsp.dir/greedy.c.o.d -o CMakeFiles/test_tsp.dir/greedy.c.o -c /Users/dev/Documents/C/tsptest/greedy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/test_tsp.dir/greedy.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/greedy.c.o -MF CMakeFiles/test_tsp.dir/greedy.c.o.d -o CMakeFiles/test_tsp.dir/greedy.c.o -c /Users/dev/Documents/C/test_tsp/greedy.c
 
 CMakeFiles/test_tsp.dir/greedy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/greedy.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/tsptest/greedy.c > CMakeFiles/test_tsp.dir/greedy.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/greedy.c > CMakeFiles/test_tsp.dir/greedy.c.i
 
 CMakeFiles/test_tsp.dir/greedy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/greedy.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/tsptest/greedy.c -o CMakeFiles/test_tsp.dir/greedy.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/greedy.c -o CMakeFiles/test_tsp.dir/greedy.c.s
 
-CMakeFiles/test_tsp.dir/Visual.c.o: CMakeFiles/test_tsp.dir/flags.make
-CMakeFiles/test_tsp.dir/Visual.c.o: /Users/dev/Documents/C/tsptest/Visual.c
-CMakeFiles/test_tsp.dir/Visual.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/test_tsp.dir/Visual.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/Visual.c.o -MF CMakeFiles/test_tsp.dir/Visual.c.o.d -o CMakeFiles/test_tsp.dir/Visual.c.o -c /Users/dev/Documents/C/tsptest/Visual.c
+CMakeFiles/test_tsp.dir/random.c.o: CMakeFiles/test_tsp.dir/flags.make
+CMakeFiles/test_tsp.dir/random.c.o: /Users/dev/Documents/C/test_tsp/random.c
+CMakeFiles/test_tsp.dir/random.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/test_tsp.dir/random.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/random.c.o -MF CMakeFiles/test_tsp.dir/random.c.o.d -o CMakeFiles/test_tsp.dir/random.c.o -c /Users/dev/Documents/C/test_tsp/random.c
 
-CMakeFiles/test_tsp.dir/Visual.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/Visual.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/tsptest/Visual.c > CMakeFiles/test_tsp.dir/Visual.c.i
+CMakeFiles/test_tsp.dir/random.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/random.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/random.c > CMakeFiles/test_tsp.dir/random.c.i
 
-CMakeFiles/test_tsp.dir/Visual.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/Visual.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/tsptest/Visual.c -o CMakeFiles/test_tsp.dir/Visual.c.s
+CMakeFiles/test_tsp.dir/random.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/random.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/random.c -o CMakeFiles/test_tsp.dir/random.c.s
+
+CMakeFiles/test_tsp.dir/random_algo.c.o: CMakeFiles/test_tsp.dir/flags.make
+CMakeFiles/test_tsp.dir/random_algo.c.o: /Users/dev/Documents/C/test_tsp/random_algo.c
+CMakeFiles/test_tsp.dir/random_algo.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/test_tsp.dir/random_algo.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/random_algo.c.o -MF CMakeFiles/test_tsp.dir/random_algo.c.o.d -o CMakeFiles/test_tsp.dir/random_algo.c.o -c /Users/dev/Documents/C/test_tsp/random_algo.c
+
+CMakeFiles/test_tsp.dir/random_algo.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/random_algo.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/random_algo.c > CMakeFiles/test_tsp.dir/random_algo.c.i
+
+CMakeFiles/test_tsp.dir/random_algo.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/random_algo.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/random_algo.c -o CMakeFiles/test_tsp.dir/random_algo.c.s
+
+CMakeFiles/test_tsp.dir/metropolis.c.o: CMakeFiles/test_tsp.dir/flags.make
+CMakeFiles/test_tsp.dir/metropolis.c.o: /Users/dev/Documents/C/test_tsp/metropolis.c
+CMakeFiles/test_tsp.dir/metropolis.c.o: CMakeFiles/test_tsp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/test_tsp.dir/metropolis.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/test_tsp.dir/metropolis.c.o -MF CMakeFiles/test_tsp.dir/metropolis.c.o.d -o CMakeFiles/test_tsp.dir/metropolis.c.o -c /Users/dev/Documents/C/test_tsp/metropolis.c
+
+CMakeFiles/test_tsp.dir/metropolis.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/test_tsp.dir/metropolis.c.i"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dev/Documents/C/test_tsp/metropolis.c > CMakeFiles/test_tsp.dir/metropolis.c.i
+
+CMakeFiles/test_tsp.dir/metropolis.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/test_tsp.dir/metropolis.c.s"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dev/Documents/C/test_tsp/metropolis.c -o CMakeFiles/test_tsp.dir/metropolis.c.s
 
 # Object files for target test_tsp
 test_tsp_OBJECTS = \
@@ -163,7 +191,9 @@ test_tsp_OBJECTS = \
 "CMakeFiles/test_tsp.dir/tsplib.c.o" \
 "CMakeFiles/test_tsp.dir/tspdata.c.o" \
 "CMakeFiles/test_tsp.dir/greedy.c.o" \
-"CMakeFiles/test_tsp.dir/Visual.c.o"
+"CMakeFiles/test_tsp.dir/random.c.o" \
+"CMakeFiles/test_tsp.dir/random_algo.c.o" \
+"CMakeFiles/test_tsp.dir/metropolis.c.o"
 
 # External object files for target test_tsp
 test_tsp_EXTERNAL_OBJECTS =
@@ -173,11 +203,12 @@ test_tsp: CMakeFiles/test_tsp.dir/misc.c.o
 test_tsp: CMakeFiles/test_tsp.dir/tsplib.c.o
 test_tsp: CMakeFiles/test_tsp.dir/tspdata.c.o
 test_tsp: CMakeFiles/test_tsp.dir/greedy.c.o
-test_tsp: CMakeFiles/test_tsp.dir/Visual.c.o
+test_tsp: CMakeFiles/test_tsp.dir/random.c.o
+test_tsp: CMakeFiles/test_tsp.dir/random_algo.c.o
+test_tsp: CMakeFiles/test_tsp.dir/metropolis.c.o
 test_tsp: CMakeFiles/test_tsp.dir/build.make
-test_tsp: /opt/homebrew/Cellar/sdl2/2.32.0/lib/libSDL2.dylib
 test_tsp: CMakeFiles/test_tsp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dev/Documents/C/tsptest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable test_tsp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dev/Documents/C/test_tsp/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable test_tsp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_tsp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -189,6 +220,6 @@ CMakeFiles/test_tsp.dir/clean:
 .PHONY : CMakeFiles/test_tsp.dir/clean
 
 CMakeFiles/test_tsp.dir/depend:
-	cd /Users/dev/Documents/C/tsptest/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dev/Documents/C/tsptest /Users/dev/Documents/C/tsptest /Users/dev/Documents/C/tsptest/build /Users/dev/Documents/C/tsptest/build /Users/dev/Documents/C/tsptest/build/CMakeFiles/test_tsp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/dev/Documents/C/test_tsp/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dev/Documents/C/test_tsp /Users/dev/Documents/C/test_tsp /Users/dev/Documents/C/test_tsp/build /Users/dev/Documents/C/test_tsp/build /Users/dev/Documents/C/test_tsp/build/CMakeFiles/test_tsp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/test_tsp.dir/depend
 

@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/dev/Documents/C/tsptest
+CMAKE_SOURCE_DIR = /Users/dev/Documents/C/test_tsp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/dev/Documents/C/tsptest/build
+CMAKE_BINARY_DIR = /Users/dev/Documents/C/test_tsp/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/tsptest/build/CMakeFiles /Users/dev/Documents/C/tsptest/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/test_tsp/build/CMakeFiles /Users/dev/Documents/C/test_tsp/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/tsptest/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dev/Documents/C/test_tsp/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,30 +128,6 @@ test_tsp: cmake_check_build_system
 test_tsp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/build
 .PHONY : test_tsp/fast
-
-Visual.o: Visual.c.o
-.PHONY : Visual.o
-
-# target to build an object file
-Visual.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/Visual.c.o
-.PHONY : Visual.c.o
-
-Visual.i: Visual.c.i
-.PHONY : Visual.i
-
-# target to preprocess a source file
-Visual.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/Visual.c.i
-.PHONY : Visual.c.i
-
-Visual.s: Visual.c.s
-.PHONY : Visual.s
-
-# target to generate assembly for a file
-Visual.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/Visual.c.s
-.PHONY : Visual.c.s
 
 greedy.o: greedy.c.o
 .PHONY : greedy.o
@@ -201,6 +177,30 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/main.c.s
 .PHONY : main.c.s
 
+metropolis.o: metropolis.c.o
+.PHONY : metropolis.o
+
+# target to build an object file
+metropolis.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/metropolis.c.o
+.PHONY : metropolis.c.o
+
+metropolis.i: metropolis.c.i
+.PHONY : metropolis.i
+
+# target to preprocess a source file
+metropolis.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/metropolis.c.i
+.PHONY : metropolis.c.i
+
+metropolis.s: metropolis.c.s
+.PHONY : metropolis.s
+
+# target to generate assembly for a file
+metropolis.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/metropolis.c.s
+.PHONY : metropolis.c.s
+
 misc.o: misc.c.o
 .PHONY : misc.o
 
@@ -224,6 +224,54 @@ misc.s: misc.c.s
 misc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/misc.c.s
 .PHONY : misc.c.s
+
+random.o: random.c.o
+.PHONY : random.o
+
+# target to build an object file
+random.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/random.c.o
+.PHONY : random.c.o
+
+random.i: random.c.i
+.PHONY : random.i
+
+# target to preprocess a source file
+random.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/random.c.i
+.PHONY : random.c.i
+
+random.s: random.c.s
+.PHONY : random.s
+
+# target to generate assembly for a file
+random.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/random.c.s
+.PHONY : random.c.s
+
+random_algo.o: random_algo.c.o
+.PHONY : random_algo.o
+
+# target to build an object file
+random_algo.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/random_algo.c.o
+.PHONY : random_algo.c.o
+
+random_algo.i: random_algo.c.i
+.PHONY : random_algo.i
+
+# target to preprocess a source file
+random_algo.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/random_algo.c.i
+.PHONY : random_algo.c.i
+
+random_algo.s: random_algo.c.s
+.PHONY : random_algo.s
+
+# target to generate assembly for a file
+random_algo.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_tsp.dir/build.make CMakeFiles/test_tsp.dir/random_algo.c.s
+.PHONY : random_algo.c.s
 
 tspdata.o: tspdata.c.o
 .PHONY : tspdata.o
@@ -282,18 +330,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test_tsp"
-	@echo "... Visual.o"
-	@echo "... Visual.i"
-	@echo "... Visual.s"
 	@echo "... greedy.o"
 	@echo "... greedy.i"
 	@echo "... greedy.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... metropolis.o"
+	@echo "... metropolis.i"
+	@echo "... metropolis.s"
 	@echo "... misc.o"
 	@echo "... misc.i"
 	@echo "... misc.s"
+	@echo "... random.o"
+	@echo "... random.i"
+	@echo "... random.s"
+	@echo "... random_algo.o"
+	@echo "... random_algo.i"
+	@echo "... random_algo.s"
 	@echo "... tspdata.o"
 	@echo "... tspdata.i"
 	@echo "... tspdata.s"

@@ -207,19 +207,14 @@
 			"path" : "/opt/homebrew/share/cmake/Modules/Platform/Linker/Apple-AppleClang.cmake"
 		},
 		{
-			"isCMake" : true,
-			"isExternal" : true,
-			"path" : "/opt/homebrew/share/cmake/Modules/CheckLibraryExists.cmake"
-		},
-		{
 			"path" : "ulysses22.tsp"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "/Users/dev/Documents/C/tsptest/build",
-		"source" : "/Users/dev/Documents/C/tsptest"
+		"build" : "/Users/dev/Documents/C/test_tsp/build",
+		"source" : "/Users/dev/Documents/C/test_tsp"
 	},
 	"version" : 
 	{

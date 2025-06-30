@@ -1,14 +1,17 @@
 /* metropolis.h */
 
-#ifndef GREEDY_H
-#define GREEDY_H
+#ifndef METROPOLIS_H
+#define METROPOLIS_H
 
-/* internal public functions =========================================== */
+#include "tspdata.h"
 
-void permut(tsp_a *chemin, int i, int j);
-int better_tour(tspdata_t *tsp, tsp_a *chemin, int i, int j);
-tsp_a* metropolis_algorithm(tspdata_t *tsp, int T);
+/* Fonctions internes publiques ======================================== */
 
+// Permute deux villes dans le chemin
+void permuter_villes(solution_tsp_t *solution, int i, int j);
+
+// Algorithme de Metropolis pour le TSP
+solution_tsp_t* algorithme_metropolis(donnees_probleme_tsp_t *donnees, int T);
 
 #endif
 

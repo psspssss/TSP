@@ -5,68 +5,90 @@
 #include <time.h>
 #include <limits.h>
 
-#include "tsplib.h"
 #include "tspdata.h"
 #include "greedy.h"
 
-/* Trouve la ville non visitée la plus proche depuis current_city */
-int find_closest_city(tspdata_t *tsp, tsp_a *greedy, int current_city) {
-    int closest_city = -1;
-    int min_distance = __INT_MAX__;
-    for (int city = 0; city < tsp->n; city++) {
-        if (!greedy->visited[city] && tsp->data[current_city * tsp->n + city] < min_distance) {
-            min_distance = tsp->data[current_city * tsp->n + city];
-            closest_city = city;
+/* 
+ * Trouve la ville non visitée la plus proche depuis ville_courante.
+ * Parcourt toutes les villes et sélectionne celle qui n'a pas encore été visitée
+ * et qui a la distance minimale depuis la ville courante.
+ */
+int trouver_ville_plus_proche(donnees_probleme_tsp_t *donnees, solution_tsp_t *solution, int ville_courante) {
+    int ville_plus_proche = -1;
+    int distance_min = INT_MAX;
+    for (int ville = 0; ville < donnees->nb_villes; ville++) {
+        // Vérifie si la ville n'a pas encore été visitée
+        // et si la distance depuis la ville courante est plus petite que la distance minimale trouvée jusqu'ici
+        if (!solution->deja_visite[ville] &&
+            donnees->matrice_distances[ville_courante * donnees->nb_villes + ville] < distance_min) {
+            // Met à jour la distance minimale et retient la ville la plus proche
+            distance_min = donnees->matrice_distances[ville_courante * donnees->nb_villes + ville];
+            ville_plus_proche = ville;
         }
     }
-    return closest_city;
+    // À la fin de la boucle, ville_plus_proche contient l'indice de la ville non visitée la plus proche
+    return ville_plus_proche;
 }
 
-/* Algorithme glouton pour le TSP */
-tsp_a* greedy_algorithm(tspdata_t *tsp) {
-    srand(time(NULL));
+/* 
+ * Algorithme glouton pour le TSP :
+ * - Commence par une ville de départ choisie aléatoirement.
+ * - À chaque étape, ajoute la ville non visitée la plus proche.
+ * - Termine en revenant à la ville de départ pour fermer le cycle.
+ */
+solution_tsp_t* algorithme_glouton(donnees_probleme_tsp_t *donnees) {
+    solution_tsp_t *solution = malloc(sizeof(solution_tsp_t));
+    if (!solution) return NULL;
 
-    tsp_a *greedy = malloc(sizeof(tsp_a));
-    if (!greedy) return NULL;
+    // Alloue le tableau pour stocker le chemin (+1 pour revenir à la ville de départ)
+    solution->chemin = malloc((donnees->nb_villes + 1) * sizeof(int));
+    if (!solution->chemin) {
+        free(solution);
+        return NULL;
+    }
+    // Alloue et initialise le tableau des villes déjà visitées à 0
+    solution->deja_visite = calloc(donnees->nb_villes, sizeof(int));
+    if (!solution->deja_visite) {
+        free(solution->chemin);
+        free(solution);
+        return NULL;
+    }
+    solution->distance_totale = 0;
+    solution->taille = 0;
 
-    greedy->tour = malloc((tsp->n + 1) * sizeof(int));
-    greedy->visited = malloc(tsp->n * sizeof(int));
-    if (!greedy->tour || !greedy->visited) return NULL;
+    // Ville de départ choisie aléatoirement
+    int ville_depart = rand() % donnees->nb_villes;
+    solution->chemin[0] = ville_depart;
+    solution->deja_visite[ville_depart] = 1;
+    solution->taille = 1;
 
-    greedy->total_distance = 0;
-    greedy->size = tsp->n;
-
-    for (int i = 0; i < tsp->n; i++) {
-        greedy->visited[i] = 0;
+    int ville_courante = ville_depart;
+    // Ajoute les villes les plus proches successivement jusqu'à visiter toutes les villes
+    while (solution->taille < (int)donnees->nb_villes) {
+        int prochaine_ville = trouver_ville_plus_proche(donnees, solution, ville_courante);
+        solution->chemin[solution->taille] = prochaine_ville;
+        solution->deja_visite[prochaine_ville] = 1;
+        solution->distance_totale += donnees->matrice_distances[ville_courante * donnees->nb_villes + prochaine_ville];
+        ville_courante = prochaine_ville;
+        solution->taille++;
     }
 
-    int next_city = rand() % tsp->n;
-    greedy->visited[next_city] = 1;
-    greedy->tour[0] = next_city;
+    // Retour à la ville de départ pour fermer le cycle
+    solution->chemin[solution->taille] = ville_depart;
+    solution->distance_totale += donnees->matrice_distances[ville_courante * donnees->nb_villes + ville_depart];
 
-    for (int i = 1; i < tsp->n; i++) {
-        int previous_city = next_city;
-        next_city = find_closest_city(tsp, greedy, previous_city);
-        greedy->visited[next_city] = 1;
-        greedy->tour[i] = next_city;
-        greedy->total_distance += tsp->data[previous_city * tsp->n + next_city];
+    return solution;
+}
+
+/*
+ * Libère la mémoire d'une solution TSP.
+ */
+void solution_tsp_libere(solution_tsp_t *solution) {
+    if (solution) {
+        free(solution->chemin);
+        free(solution->deja_visite);
+        free(solution);
     }
-
-    // Retour à la ville de départ
-    int last_city = greedy->tour[tsp->n - 1];
-    int first_city = greedy->tour[0];
-    greedy->total_distance += tsp->data[last_city * tsp->n + first_city];
-    greedy->tour[tsp->n] = first_city;
-
-    return greedy;
 }
-
-// Libération de la mémoire allouée
-void tsp_a_free(tsp_a *greedy) {
-    free(greedy->tour);
-    free(greedy->visited);    
-    free(greedy);    
-}
-
 
 /* eof */

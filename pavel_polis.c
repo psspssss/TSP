@@ -7,11 +7,9 @@
 #include "tspdata.h"
 #include "tsplib.h"
 #include "random.h"
-#include "pavel-polis.h"
+#include "pavel_polis.h"
 
-
-tsp_a* pavel_polis_algorithm(tspdata_t *tsp, int T)
-{
+solution_tsp_t* pavel_polis_algorithme(donnees_probleme_tsp_t *donnees, int T) {
     return 0;
 }
 

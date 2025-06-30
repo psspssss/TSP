@@ -1,5 +1,5 @@
 CMakeFiles/test_tsp.dir/greedy.c.o: \
-  /Users/dev/Documents/C/tsptest/greedy.c \
+  /Users/dev/Documents/C/test_tsp/greedy.c \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/cdefs.h \
@@ -88,6 +88,12 @@ CMakeFiles/test_tsp.dir/greedy.c.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_clock_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/_types/_timespec.h \
-  /Users/dev/Documents/C/tsptest/tspdata.h \
-  /Users/dev/Documents/C/tsptest/tsplib.h \
-  /Users/dev/Documents/C/tsptest/greedy.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/machine/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/arm/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/arm/_limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/sys/syslimits.h \
+  /Users/dev/Documents/C/test_tsp/tspdata.h \
+  /Users/dev/Documents/C/test_tsp/tsplib.h \
+  /Users/dev/Documents/C/test_tsp/greedy.h
